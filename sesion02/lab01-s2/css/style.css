@@ -1,0 +1,25 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f0;
+}
+#titulo{
+    font-size: 3em;
+    color: #333;
+}
+#boton{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#boton:hover{
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
