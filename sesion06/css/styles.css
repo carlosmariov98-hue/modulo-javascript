@@ -1,0 +1,204 @@
+
+:root {
+    --bg-color: #0b0c10;
+    --card-bg: #1f2833;
+    --text-main: #c5c6c7;
+    --text-light: #ffffff;
+    --neon-cyan: #66fcf1;
+    --neon-cyan-dim: #45a29e;
+    --neon-purple: #c026d3;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+main {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+header h1 {
+    text-align: center;
+    color: var(--neon-cyan);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan-dim);
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    border: 1px solid var(--neon-cyan-dim);
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.15);
+}
+
+.card h2 {
+    color: var(--neon-cyan-dim);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#mensaje {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--neon-purple);
+    transition: all 0.3s ease;
+}
+
+
+
+
+button {
+    background: transparent;
+    color: var(--neon-cyan);
+    border: 2px solid var(--neon-cyan);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: var(--neon-cyan);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--neon-cyan), 0 0 30px var(--neon-cyan-dim);
+    transform: translateY(-3px);
+}
+
+#btnLimpiar {
+    border-color: var(--neon-purple);
+    color: var(--neon-purple);
+}
+
+#btnLimpiar:hover {
+    background: var(--neon-purple);
+    color: var(--text-light);
+    box-shadow: 0 0 15px var(--neon-purple);
+}
+
+.resultado-texto {
+    background-color: rgba(102, 252, 241, 0.1);
+    border-left: 4px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+}
+
+.resultado-html {
+    background-color: rgba(192, 38, 211, 0.1);
+    border-left: 4px solid var(--neon-purple);
+    color: var(--neon-purple);
+}
+
+.resultado-limpio {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-left: 4px solid var(--text-main);
+    color: var(--text-light);
+}
+
+.oculto {
+    display: none !important;
+}
+
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    width: 100%;
+    align-items: center;
+}
+
+.fila-botones {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.separador-neon {
+    width: 80%;
+    border: none;
+    height: 1px;
+    background: var(--neon-cyan-dim);
+    box-shadow: 0 0 10px var(--neon-cyan);
+    margin: 0.5rem 0;
+    opacity: 0.4;
+}
+
+
+#enlace {
+    color: var(--neon-purple);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 8px rgba(192, 38, 211, 0.5); 
+}
+
+#enlace:hover {
+    color: var(--text-light);
+    text-shadow: 0 0 15px var(--neon-purple), 0 0 30px var(--neon-purple);
+}
+
+
+
+
+button:disabled {
+    border-color: #475569; 
+    color: #475569; 
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button:disabled:hover {
+    background: transparent;
+    color: #475569;
+    box-shadow: none;
+    transform: none;
+}
