@@ -1,0 +1,61 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #b4d4e977;
+  color: #1f2937;
+}
+.app {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+.hero, .panel, .resumen, .acciones {
+  background: #9b999981;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+.tag { color: #00f8e8 ; font-weight: bold; }
+.acciones { display: flex; flex-wrap: wrap; gap: 12px; }
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: #06a3e0;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover { background: #1d4ed8; }
+.grid-equipos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.card-equipo {
+  border: 1px solid #0eee19;
+  border-radius: 16px;
+  padding: 18px;
+  background: #f8fafc;
+}
+.card-equipo.destacado {
+  border-color: #fda000;
+  background: #ffdecb;
+}
+.card-equipo h3 { margin: 0 0 8px; }
+.card-equipo p { margin: 6px 0; }
+.btn-eliminar {
+  margin-top: 12px;
+  background: #151e6d;
+  color: white;
+}
+.btn-eliminar:hover { background: #e70e0e; }
+.aviso {
+  background: #dbeafe;
+  border-left: 5px solid #4ce406;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
