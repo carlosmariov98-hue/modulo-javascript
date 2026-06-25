@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplos de Eventos sesion 08</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Ejemplos de Eventos</h1> 
+        </header>
+        <section>
+            <div class="contenedor">
+                <input type="text" id="miInput" value="Doble clic aquí">
+            </div>
+        
+            <div class="contenedor">
+                <input type="text" id="miCampoTexto" placeholder="Escribe y presiona Enter">
+            </div>
+        
+            <div class="contenedor">
+                <img id="miImagen" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZkKLlsKtaurruyprsDmrLkYPLDFp7xSPAHvaauhGbkDZuSeQOpyStxMQZBYfcnmUtUY0HG6csYfP-GyouECM7L7Nnif_73gTnqpgQ4ag&s=10" alt="Imagen de prueba">
+            </div>
+        
+            <div class="contenedor">
+                <button id="miBoton">Haz clic aquí (EventListener)</button>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div>
+                <button onclick="saludarDesdeHtml()">saludar con html</button>
+                <p id="mensajeHtml"></p>
+            </div>
+            <div>
+                <button id="btnPropiedad">Saludar con onclick</button>
+                <p id="mensajePropiedad"></p>
+            </div>
+            <div>
+                <button id="btnListener">Saludar con addEventListener</button>
+                <p id="mensajeListener"></p>
+            </div>
+            <div>
+                <button id="botonE">btnEvento</button>
+            </div> <br> <br>  
+        </section>
+        <section>
+            <form id="formulario">
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"> 
+                <input type="email" name="email" id="email" placeholder="Escribe tu correo">
+                <button type="submit">Enviar</button>
+
+            </form>
+            <div>
+                <h2>Usuarios registrados</h2>
+                <ul id="listaUsuarios"></ul>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

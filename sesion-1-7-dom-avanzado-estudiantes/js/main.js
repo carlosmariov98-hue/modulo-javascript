@@ -33,7 +33,7 @@ function crearTarjetaEquipo(equipo) {
 
   article.append(h3, p1, p2, btnEliminar);
   return article;
-}
+} 
 
 async function cargarEquipos() {
   try {
